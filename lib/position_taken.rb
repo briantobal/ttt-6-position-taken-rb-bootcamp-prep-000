@@ -4,9 +4,11 @@
 def position_taken? (board, user_input) 
   if board[user_input] == "" || board[user_input] == " "
     false 
-  else board[user_input] == "X" || "O" 
-    return true  
-   end 
+  elsif board[user_input] == nil 
+    false
+  else board[user_input] =="X" || board[user_input] =="O"
+    true 
+  end 
 end
 
 
